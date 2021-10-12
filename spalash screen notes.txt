@@ -1,0 +1,18 @@
+getSupportActionBar().hide();- it is use to hide action bar in that activity;
+        Thread thread= new Thread() {
+           public void run (){
+               try {
+                   Thread.sleep(3000);
+               }
+               catch ( Exception exception){
+                   exception.printStackTrace();
+               }
+               finally {
+                   Intent intent = new Intent(splashactivity.this , MainActivity.class);
+                   startActivity(intent);
+                   finish();
+
+
+               }
+           }
+        };thread.start(); - it is the code of came from splase activity to main activity;
